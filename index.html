@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Modern Travel Agency Website Template built with HTML, CSS, JavaScript, and Tailwind CSS." />
+        <meta name="author" content="Abdullah AL Mahmud" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Swiper.css -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <!-- CSS File -->
+        <link rel="stylesheet" href="CSS/tailwind.css" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <title>Travel Agency Website Template</title>
+    </head>
+    <body class="font-gilroy relative overflow-x-hidden">
+        <!-- Preloader Starts From Here -->
+        <div
+            class="w-screen h-screen bg-white preloader fixed z-[100000] top-0 left-0"
+            style="
+                background: url('images/travel-agency-preloader.gif') no-repeat
+                    center center;
+            "
+        ></div>
+        <!-- Header Starts From Here -->
+        <header
+            class="px-6 py-3 fixed top-0 left-0 flex justify-between items-center w-screen bg-white xl:px-12 header z-[5000]"
+        >
+            <div class="z-[3000]">
+                <p class="font-semibold text-lg lg:text-xl">
+                    <a href="index.html">Pic<span class="italic">Trav</span></a>
+                </p>
+            </div>
+            <div class="hidden list-container lg:block z-[4000]">
+                <ul
+                    class="absolute top-0 right-0 w-screen flex justify-center items-center flex-col gap-4 px-4 py-8 backdrop-blur-md div-shadow lg:flex-row lg:relative lg:shadow-none lg:w-auto lg:gap-12 lg:py-4"
+                >
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#home">Home</a>
+                    </li>
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#promos">Promos</a>
+                    </li>
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#services">Services</a>
+                    </li>
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#faq">FAQ</a>
+                    </li>
+                    <li
+                        class="text-lg font-semibold lg:text-base before:hover:w-[100%] before:h-[1px] before:absolute before:bottom-0 before:left-0 relative before:content-[''] before:bg-black transition-effect"
+                    >
+                        <a href="#contact-us">Contact Us</a>
+                    </li>
+                    <button
+                        class="bg-black text-white px-4 py-2 rounded-full my-5 hover:opacity-80 transition-effect lg:hidden"
+                    >
+                        Booking Now
+                        <i
+                            class="fa-solid fa-arrow-right inline-block ml-2 text-lg"
+                        ></i>
+                    </button>
+                </ul>
+            </div>
+            <button
+                class="bg-black text-white px-4 py-2 rounded-full hidden hover:opacity-80 transition-effect lg:block"
+            >
+                Booking Now
+                <i
+                    class="fa-solid fa-arrow-right inline-block ml-2 text-lg"
+                ></i>
+            </button>
+            <div
+                class="w-8 h-8 hover:bg-gray-600 rounded-full flex justify-center items-center transition-effect hover:text-white z-[5000] lg:hidden"
+            >
+                <i class="fa-solid fa-bars w-4 h-4 ml-[2px] menu"></i>
+            </div>
+        </header>
+        <!-- Header Ends Here -->
+
+        <!-- Banner Area Starts Here -->
+        <section
+            class="px-6 py-3 xl:px-12 mt-14 lg:mt-24 smallMB:scroll-mt-12 lg:scroll-mt-20"
+            id="home"
+        >
+            <div
+                class="relative rounded-2xl home-content"
+                style="
+                    background-image: url('./images/test-image.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: calc(100vh - 68px);
+                "
+            >
+                <div class="px-4 absolute top-[50%] translate-y-[-50%] md:px-8">
+                    <p
+                        class="text-xl mb-2 font-semibold text-white mediumMB:text-2xl mediumMB:mb-4 md:text-3xl lg:text-4xl xl:text-6xl"
+                    >
+                        Effortless Planning for <br />
+                        Your <span class="font-bold">Dream Adventure</span
+                        ><br />
+                        Awaits You!.
+                    </p>
+                    <p
+                        class="text-white mb-5 text-sm mediumMB:text-base md:w-[500px] md:text-lg"
+                    >
+                        Discover the fastest and most enjoyable ways to plan
+                        your dream trip! with practical and intuitive solutions
+                    </p>
+                    <div
+                        class="pb-5 flex justify-start items-center gap-5 smallMB:gap-3"
+                    >
+                        <button
+                            class="px-4 py-3 rounded-full text-sm mediumMB:px-6 background-btn hover:div-shadow hover:opacity-90 transition-effect xl:px-8 xl:text-base"
+                        >
+                            Get Started
+                        </button>
+                        <button
+                            class="px-4 py-3 rounded-full text-sm mediumMB:px-6 border-btn hover:scale-110 transition-effect xl:px-8 xl:text-base"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Area Ends Here -->
+
+        <!-- Company Logo Section Starts From Here -->
+        <section class="mt-5">
+            <div
+                class="max-w-[100%] xl:max-w-[85%] mx-auto px-2 bigMB:px-0 scroller"
+            >
+                <ul
+                    class="flex justify-center items-center gap-5 py-4 flex-wrap bigMB:gap-8 tag-list scroller__inner"
+                >
+                    <li>
+                        <img
+                            src="images/airbnb.png"
+                            alt="image of the company logo"
+                            class="w-36 h-14 xl:w-40 xl:h-16"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/airtable.png"
+                            alt="image of the company logo"
+                            class="w-32 h-12 lg:w-36 lg:h-14 xl:w-40 xl:h-18"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/task-rabbit.png"
+                            alt="image of the company logo"
+                            class="w-32 h-12 lg:w-36 lg:h-14 xl:w-44 xl:h-18"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/asana.png"
+                            alt="image of the company logo"
+                            class="w-32 h-14 xl:w-40 xl:h-[75px]"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/afterpay.png"
+                            alt="image of the company logo"
+                            class="w-32 h-12 xl:w-40 xl:h-18"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/booking.png"
+                            alt="image of the company logo"
+                            class="w-32 h-14 xl:w-40 xl:h-18"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="images/base-camp.png"
+                            alt="image of the company logo"
+                            class="w-32 h-14 xl:w-40 xl:h-16"
+                        />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Company Logo Section Ends Here -->
+
+        <!-- Promos Section Starts from Here -->
+        <section
+            class="px-6 py-3 xl:px-12 mt-5 scroll-mt-12 md:scroll-mt-20"
+            id="promos"
+        >
+            <h2
+                class="font-semibold smallMB:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3"
+            >
+                Our Recommeded Destinations
+            </h2>
+            <p class="smallMB:text-sm mediumMB:text-base bigMB:text-lg">
+                Seamlessly travel to your dream destination
+            </p>
+            <div class="swiper card_slider mt-10">
+                <div class="swiper-wrapper">
+                    <!-- Slider1 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative"
+                        style="
+                            background-image: url('images/Kingkling beach in Nusa Penida.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Kingkling Beach
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        Indonesia
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider2 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/ladakh.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Ladakh
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        India
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider3 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/Eilean Donan Castle, Dornie, United Kingdom.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Eilean Donan Castle
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        United Kingdom
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider4 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/rothenburg-germany.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Rothenburg
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        Germany
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider5 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/pyramid.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Pyramid
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        Egypt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider6 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/saint-martin.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Saint Martin
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        Bangladesh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider7 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/Venice-italy.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Venice
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        Italy
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                    <!-- Slider8 -->
+                    <div
+                        class="swiper-slide rounded-xl w-full min-h-96 relative flex-none"
+                        style="
+                            background-image: url('images/eiffel-tower.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        "
+                    >
+                        <div
+                            class="w-full rounded-xl flex justify-between items-center bg-black opacity-80 absolute bottom-0"
+                        >
+                            <div class="p-4">
+                                <p class="text-white font-semibold mb-3">
+                                    Eiffel Tower
+                                </p>
+                                <div
+                                    class="flex justify-start items-center gap-2"
+                                >
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-location-dot text-white font-semibold"
+                                        ></i>
+                                    </div>
+                                    <p class="text-white font-semibold">
+                                        France
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-white text-lg px-4">$120</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!-- Promos Section Ends Here -->
+
+        <!-- Services Section Starts Here -->
+        <section
+            class="px-6 py-3 xl:px-12 mt-20 scroll-mt-14 md:scroll-mt-20"
+            id="services"
+        >
+            <div
+                class="grid grid-cols-1 justify-center items-center gap-5 md:grid-cols-2"
+            >
+                <div class="service-data">
+                    <button
+                        class="border border-black px-3 py-1 rounded-2xl font-semibold mb-2"
+                    >
+                        How we work?
+                    </button>
+                    <h2 class="text-2xl font-bold mb-2">
+                        The journey outweighs the destination.
+                    </h2>
+                    <p class="text-sm mb-5 text-textColor">
+                        Encapsulates the experience of travel that merges the
+                        serenity of nature with the dynamism of city.
+                    </p>
+                    <div>
+                        <div class="flex justify-start items-center gap-3">
+                            <div
+                                class="border border-black w-5 h-5 rounded-full flex justify-center items-center"
+                            >
+                                <div
+                                    class="w-3 h-3 bg-black rounded-full"
+                                ></div>
+                            </div>
+                            <h3 class="font-semibold lg:text-lg">
+                                01/Explore Destination
+                            </h3>
+                        </div>
+                        <div
+                            class="flex justify-start items-center gap-5 mb-3 small:mt-2"
+                        >
+                            <div
+                                class="bg-black smallMB:w-4 smallMB:h-28 rounded-md ml-2 mt-1 bigMB:h-24 xl:h-20 xl:w-3"
+                            ></div>
+                            <p
+                                class="text-sm text-textColor bigMB:text-base lg:text-base lg:my-4"
+                            >
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sapiente distinctio iure non,
+                                corporis quae laudantium aut fugiat nulla?
+                                Maiores alias quibusdam eligendi dolore
+                                voluptatem neque?
+                            </p>
+                        </div>
+                        <div class="flex justify-start items-center gap-3 mb-3">
+                            <div
+                                class="border border-slate-400 w-5 h-5 rounded-full"
+                            ></div>
+                            <h3 class="font-semibold lg:text-lg">
+                                02/Select A Tour Plan
+                            </h3>
+                        </div>
+                        <div class="flex justify-start items-center gap-3">
+                            <div
+                                class="border border-slate-400 w-5 h-5 rounded-full"
+                            ></div>
+                            <h3 class="font-semibold lg:text-lg">
+                                03/Booking Now
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-img">
+                    <img
+                        src="images/service-image.jpg"
+                        alt="image of the services section"
+                        class="rounded-xl min-h-52"
+                    />
+                </div>
+            </div>
+        </section>
+        <!-- Services Section Ends Here -->
+
+        <!-- CTA Section Starts From Here -->
+        <section class="py-3 mt-20 scroll-mt-14 md:scroll-mt-20">
+            <div
+                class="min-h-[75vh] relative overlay"
+                style="
+                    background-image: url('images/booking-now.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                "
+            >
+                <div
+                    class="px-8 absolute top-[50%] translate-y-[-50%] md:px-16 cta-data"
+                >
+                    <p
+                        class="text-xl mb-2 font-medium text-white mediumMB:text-2xl mediumMB:mb-4 md:text-3xl lg:text-4xl xl:text-6xl"
+                    >
+                        Ready to Embark on Your <br />
+                        <span class="font-semibold">Next Adventure?</span>
+                    </p>
+                    <p
+                        class="text-white mb-5 text-sm mediumMB:text-base md:w-[580px] md:text-lg"
+                    >
+                        Discover the fastest and most enjoyable ways to plan
+                        your dream trip! with practical and intuitive solutions
+                    </p>
+                    <div
+                        class="pb-5 flex justify-start items-center gap-5 smallMB:gap-3"
+                    >
+                        <button
+                            class="px-4 py-3 rounded-lg text-sm mediumMB:px-6 background-btn hover:div-shadow hover:opacity-90 transition-effect xl:px-8 xl:text-base"
+                        >
+                            Booking Now
+                        </button>
+                        <button
+                            class="px-4 py-3 rounded-lg text-sm mediumMB:px-6 border-btn hover:scale-110 transition-effect xl:px-8 xl:text-base"
+                        >
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section Ends Here -->
+
+        <!-- Testimonials Section Starts From Here -->
+        <section
+            class="px-6 py-3 xl:px-12 mt-20 scroll-mt-14 md:scroll-mt-20"
+            id="testimonials"
+        >
+            <button
+                class="border border-black px-6 py-2 rounded-full font-semibold"
+            >
+                Testimonials
+            </button>
+            <h2 class="font-bold text-2xl mt-3">Public Cheers For US!</h2>
+            <p class="mt-2 mb-4 font-semibold">
+                Find out how our users are spreading the word!
+            </p>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide1 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-1.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide2 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-2.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide3 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-3.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide4 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-4.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide5 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-5.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide6 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-6.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide7 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-7.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide8 -->
+                    <div
+                        class="swiper-slide relative bg-[#ecebeb] min-h-48 px-8 py-4 border border-black rounded-md"
+                    >
+                        <img
+                            src="images/right-quote.png"
+                            alt="image of right quote"
+                            class="absolute w-14 right-0 pt-3 mr-5"
+                        />
+                        <p class="text-black font-medium mt-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iste voluptatibus quos magnam numquam velit
+                            aliquam reprehenderit id eligendi. Molestiae
+                            voluptates eaque, ab ipsa veniam obcaecati!
+                        </p>
+                        <div class="mt-5 flex justify-start items-center gap-3">
+                            <div>
+                                <img
+                                    src="images/client-8.jpg"
+                                    alt="image of the client"
+                                    class="w-10 h-10 rounded-full border border-[#DADADA]"
+                                />
+                            </div>
+                            <div>
+                                <p class="text-[#000000] text-lg font-semibold">
+                                    Our Client
+                                </p>
+                                <p class="text-sm text-black">Web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients Testimonials Ends Here -->
+        <!-- FAQ Section Starts From Here -->
+        <section
+            class="px-6 py-3 xl:px-12 mt-20 scroll-mt-14 md:scroll-mt-20"
+            id="faq"
+        >
+            <h2
+                class="text-center font-semibold smallMB:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3"
+            >
+                Frequently Asked Questions
+            </h2>
+            <p class="mx-auto text-textColor max-w-[568px]">
+                If you have any difficulty or confusion with our application you
+                can ask it
+            </p>
+            <div class="mt-10">
+                <div class="mb-5 border-b border-slate-400 no-border">
+                    <div class="flex justify-between items-center mb-3">
+                        <p class="font-semibold smallMB:text-base md:text-lg">
+                            1. What is Pic Trav?
+                        </p>
+                        <i
+                            class="fa-solid fa-chevron-up block cursor-pointer chevron"
+                        ></i>
+                    </div>
+                    <div class="answer block">
+                        <p class="text-textColor max-w-[768px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Officia voluptas dolore, facilis fugit soluta
+                            voluptatum fugiat nesciunt eaque impedit, eveniet
+                            aspernatur corrupti, accusamus quos odio!
+                            Consectetur quam earum nulla placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-5 border-b border-slate-400">
+                    <div class="flex justify-between items-center mb-3">
+                        <p class="font-semibold smallMB:text-base md:text-lg">
+                            2. What features does PicTrav offer?
+                        </p>
+                        <i
+                            class="fa-solid fa-chevron-down block cursor-pointer chevron"
+                        ></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p class="text-textColor max-w-[768px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Officia voluptas dolore, facilis fugit soluta
+                            voluptatum fugiat nesciunt eaque impedit, eveniet
+                            aspernatur corrupti, accusamus quos odio!
+                            Consectetur quam earum nulla placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-5 border-b border-slate-400">
+                    <div class="flex justify-between items-center mb-3">
+                        <p class="font-semibold smallMB:text-base md:text-lg">
+                            3. How do I use PicTrav?
+                        </p>
+                        <i
+                            class="fa-solid fa-chevron-down block cursor-pointer chevron"
+                        ></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p class="text-textColor max-w-[768px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Officia voluptas dolore, facilis fugit soluta
+                            voluptatum fugiat nesciunt eaque impedit, eveniet
+                            aspernatur corrupti, accusamus quos odio!
+                            Consectetur quam earum nulla placeat.
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-5 border-b border-slate-400">
+                    <div class="flex justify-between items-center mb-3">
+                        <p class="font-semibold smallMB:text-base md:text-lg">
+                            4. What if I encounter issues while using the app?
+                        </p>
+                        <i
+                            class="fa-solid fa-chevron-down block cursor-pointer chevron"
+                        ></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p class="text-textColor max-w-[768px]">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Officia voluptas dolore, facilis fugit soluta
+                            voluptatum fugiat nesciunt eaque impedit, eveniet
+                            aspernatur corrupti, accusamus quos odio!
+                            Consectetur quam earum nulla placeat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Starts From here -->
+        <footer
+            class="px-6 py-12 xl:px-12 mt-20 scroll-mt-14 md:scroll-mt-20 bg-slate-900 text-white xl:py-16"
+            id="contact-us"
+        >
+            <div
+                class="grid grid-cols-1 justify-start gap-5 xl:grid-cols-[425px_1fr]"
+            >
+                <div>
+                    <p class="font-semibold text-lg lg:text-xl">
+                        <a href="index.html"
+                            >Pic<span class="italic">Trav</span></a
+                        >
+                    </p>
+                    <p
+                        class="smallMB:text-sm mt-3 lg:max-w-[768px] xl:max-w-[375px]"
+                    >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Non unde officia, consequatur eius esse sit nam ut animi
+                        soluta minus placeat quod. Eligendi, quae quisquam.
+                    </p>
+                </div>
+                <div
+                    class="grid smallMB:grid-cols-2 gap-2 md:grid-cols-4 xl:gap-4"
+                >
+                    <div>
+                        <p class="font-semibold text-lg lg:text-xl">Company</p>
+                        <ul
+                            class="flex smallMB:flex-col gap-2 my-3 text-[#969494]"
+                        >
+                            <li><a href="#home"> Home </a></li>
+                            <li><a href="#promos"> Promos </a></li>
+                            <li>
+                                <a href="#testimonials"> Testimonials </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg lg:text-xl">Discover</p>
+                        <ul
+                            class="flex smallMB:flex-col gap-2 my-3 text-[#969494]"
+                        >
+                            <li>Partner Program</li>
+                            <li>What is TrafZer</li>
+                            <li>Resource</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg lg:text-xl">Product</p>
+                        <ul
+                            class="flex smallMB:flex-col gap-2 my-3 text-[#969494]"
+                        >
+                            <li>Marketplace</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Help Center</p>
+                        <ul
+                            class="flex smallMB:flex-col gap-2 my-3 text-[#969494]"
+                        >
+                            <li>Community</li>
+                            <li>Knowledge Base</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-b border-[#646464] md:mt-5" />
+            <div
+                class="mt-3 md:flex md:justify-between md:items-center md:gap-3 md:mt-5 xl:mt-10"
+            >
+                <div class="flex justify-center items-center gap-3 xl:gap-5">
+                    <div class="xl:text-xl">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="xl:text-xl">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="xl:text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="xl:text-xl">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="smallMB:mt-4 md:mt-0">
+                    <p class="text-sm lg:text-base smallMB:text-center">
+                        &copy;Copyright 2023.All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper.js -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Script.js -->
+        <script src="script.js"></script>
+    </body>
+</html>

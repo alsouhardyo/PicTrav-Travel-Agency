@@ -5,8 +5,6 @@
     src: url("../fonts/Gilroy-Regular.ttf") format("truetype"),
         url("../fonts/Gilroy-SemiBold.ttf") format("truetype"),
         url("../fonts/Gilroy-Bold.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* TailwindCSS Base Styles */

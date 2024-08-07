@@ -1,8 +1,10 @@
 /* Font-Family:- */
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Regular.ttf") format("truetype"),
+        url("../fonts/Gilroy-SemiBold.ttf") format("truetype"),
+        url("../fonts/Gilroy-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -61,10 +63,10 @@
     80% {
         opacity: 1;
     }
-    90%{
+    90% {
         opacity: 1;
     }
-    100%{
+    100% {
         opacity: 0;
     }
 }

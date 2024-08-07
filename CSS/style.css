@@ -1,3 +1,17 @@
+/* Font-Family:- */
+
+@font-face {
+  font-family: 'Gilroy';
+
+  src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
+         url('fonts/Gilroy-Regular.woff') format('woff'),
+         url('fonts/Gilroy-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 /* TailwindCSS Base Styles */
 
 /* ! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com */
@@ -645,16 +659,16 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -1459,8 +1473,8 @@ video {
     margin-bottom: 1rem;
   }
 
-  .lg\:mt-24 {
-    margin-top: 6rem;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
